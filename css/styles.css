@@ -99,8 +99,6 @@ ul {
 
 .site-nav {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-left: 93px;
 }
 
@@ -113,9 +111,13 @@ ul {
 
 .contacts-list {
     display: flex;
+    margin-left: auto;
+}
+
+.site-nav-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: auto;
 }
 
 .site-nav-link,
@@ -140,7 +142,10 @@ ul {
 }
 
 .contacts-link {
+    display: block;
     color: var(--secondary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
@@ -210,10 +215,24 @@ ul {
 }
 
 
-.img-block {
+.img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
+.visually-hidden {              /*Specially class-pattern that hidden headers*/
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 /* Features section */
 
